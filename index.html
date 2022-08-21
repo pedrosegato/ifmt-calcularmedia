@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Médias</title>
+    <link rel="shortcut icon" href="./img/ificon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body class="bg">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IFMT Dashboard</a>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Calcular Médias</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <h1>calculadora de médias</h1>
+        <div class="row mt-3">
+            <div class="col-2">
+                <input type="text" class="form-control" id="nota1" placeholder="Nota 1">
+            </div>
+
+            <div class="col-2">
+                <input type="text" class="form-control" id="nota2" placeholder="Nota 2">
+            </div>
+
+            <div class="col-2">
+                <input type="text" class="form-control" id="nota3" placeholder="Nota 3">
+            </div>
+
+            <div class="col-2">
+                <input type="text" class="form-control" id="nota4" placeholder="Nota 4">
+            </div>
+
+            <div class="col-2">
+                <button type="submit" class="btn btn-success mb-3" onclick="calcularNota()">Calcular</button>
+            </div>
+        </div>
+        <div class="resultado">
+            <h5 id="media">Sua média final é: 0.0</h5>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
